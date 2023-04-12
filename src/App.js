@@ -10,6 +10,7 @@ import Form from "./components/Form"
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import Favorites from './components/favorites';
 
 
 
@@ -64,6 +65,7 @@ function App() {
          <Route path="/about"  element={<About/>}/>
          <Route path="/detail/:id"  element={<Detail/>}/>
          <Route path="/"  element={<Form login={login}/>}/>
+         <Route path="/favorites" element={<Favorites/>}/>
       </Routes>
       </div>
    );
