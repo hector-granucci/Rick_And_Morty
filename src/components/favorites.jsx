@@ -3,6 +3,8 @@ import { Link} from 'react-router-dom';
 import { filterCards, orderCards } from "../redux/actions";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
+import Card from "./Card";
+
 
 const Favorites = () => {
 
@@ -26,7 +28,7 @@ const Favorites = () => {
     return (
         <div>
             {
-                myFavorites.map((character) => {
+                myFavorites?.map((character) => {
                     return (
                         <div>
                             <select onChange={handleOrder}>
@@ -38,6 +40,7 @@ const Favorites = () => {
                                 <option value="Female">Female</option>
                                 <option value="Genderless">Gender</option>
                                 <option value="unknown">unknown</option>
+                                <option value="allCharacters">allCharacters</option>
                             </select>
                               <Link to={`/detail/${character.id}`} >
                                <h3 className="card-name">{character.name}</h3>
@@ -47,7 +50,7 @@ const Favorites = () => {
                              <h2>{character.species}</h2>
                             <h2>{character.gender}</h2>
                              <h2>{character.origin.name}</h2>
-                             <img src={character.image} alt={character.name} />
+                             <img src={character.image} alt={character.name} />                           
                         </div>
                     )
                 })
