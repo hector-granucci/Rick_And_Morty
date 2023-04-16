@@ -1,0 +1,68 @@
+.container{
+    display: flex; /* Establecer el contenedor como flex */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; 
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    height: 55vh;
+    width: 50vh;
+    backdrop-filter: blur(20px);
+}
+
+.email, .pass{
+    padding: 10px;
+    margin: 5px;
+}
+
+.email label, .pass label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(15, 243, 15);
+    font-weight: bold;
+}
+
+.form p{
+    font-style: italic;
+    color: rgb(15, 243, 15);
+    font-weight: none;
+}
+
+.email input{
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(99, 2, 255);
+    color: white;
+}
+
+.pass input{
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(232, 110, 243);
+    color: white;
+}
+
+
+.btn{
+    padding: 10px;
+}
+
+.btn button{
+    padding: 3px;
+    height: 35px;
+    width: 90px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(15, 243, 15);
+    font-weight: bold; 
+}
+
+.btn button:hover{
+    cursor: pointer;
+    border: 2px solid  rgb(15, 243, 15);
+    box-shadow: 5px 8px 10px rgb(15, 243, 15);
+}

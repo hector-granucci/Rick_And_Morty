@@ -1,9 +1,11 @@
-import Card from './Card';
+import Card from '../Card/Card';
+import style from "./Cards.module.css"
+
 
  function Cards(props) {
 
    return (
-   <div>
+   <div className={style.Cards}>
       {
       props.characters?.map((s) => {
          return ( <div key={s.id}>

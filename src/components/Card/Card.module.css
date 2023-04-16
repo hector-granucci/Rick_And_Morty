@@ -1,0 +1,113 @@
+.conteiner {
+    background-color: rgb(2, 2, 2);
+    height: 50vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    margin: 12px;
+}
+
+
+
+
+
+.X{
+    padding: 1px;
+    height: 3vh;
+    width: 5vh;
+}
+.X button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(243, 15, 15);
+    border-radius: 10px;
+    padding: 1px;
+    height: 3vh;
+    width: 5vh;
+}
+.X button:hover{
+    cursor: pointer;
+    border: 2px solid  rgb(243, 15, 15);
+    box-shadow: 5px 8px 10px rgb(243, 15, 15);
+}
+
+
+
+
+.corazon{
+    height: 2vh;
+    width: 3vh;
+    padding: 3px;  
+    margin-left: 210px;
+    margin-top: -23px;
+}
+.corazon button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(243, 61, 15);
+    border-radius: 10px;
+    padding: 1px;
+    height: 4vh;
+    width: 5vh;
+    
+}
+.corazon button:hover{
+    cursor: pointer;
+    border: 2px solid  rgb(248, 6, 6);
+    box-shadow: 5px 8px 10px rgb(248, 3, 3);
+}
+
+
+
+
+.date{
+    height: 0vh;
+    width: 40vh;
+    padding: 2px;
+}
+.date h2{
+    height: 1vh;
+    width: 40vh;
+    padding: 2px;
+    margin: center;
+    color: rgb(0, 255, 34);
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+
+
+.detalle{
+    height: 2vh;
+    width: 25vh;
+    padding: 3px;
+    margin-top: -38px;
+    margin-left: 40px;
+}
+.detalle h3{
+ color:rgb(0, 255, 34);
+}
+.detalle h3:hover{
+    cursor: pointer;
+    border: 2px solid  rgb(255, 0, 0);
+    box-shadow: 5px 8px 10px rgb(255, 0, 0);
+}
+
+
+
+
+.img {
+    height: 20vh;
+    width: 40vh;
+}
+.img img {
+    height: 29vh;
+    width: 39vh;
+    margin-top: -29px;
+    margin-left: -6px;
+    border-radius: 10px;
+}
+
+
+  
+

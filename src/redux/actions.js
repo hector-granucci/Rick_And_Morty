@@ -22,10 +22,10 @@ export const filterCards = (gender) => {
         }
 }
 
-export const orderCards = (orden) => {
+export const orderCards = (order) => {
     return { 
         type: ORDER,
-         payload: orden
+         payload: order
         }
 }
 

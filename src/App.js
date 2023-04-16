@@ -1,16 +1,13 @@
 import './App.css';
-import Cards from './components/Cards.jsx';
-import Nav from "./components/Nav"
-import { useState } from 'react';
+import Cards from './components/Cards/Cards';
+import Nav from "./components/Nav/Nav"
+import { useState, useEffect } from 'react';
 import axios from "axios";
-import {Routes, Route} from 'react-router-dom';
-import Detail from './components/Detail';
-import About from './components/About';
-import Form from "./components/Form"
-import { useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
-import Favorites from './components/favorites';
+import Detail from './components/Detail/Detail';
+import About from './components/About/About';
+import Form from "./components/Form/Form"
+import { useLocation, useNavigate, Routes, Route } from 'react-router-dom';
+import Favorites from './components/Favorites/favorites';
 
 
 
@@ -42,6 +39,10 @@ function App() {
 
    function onSearch(id) {
       axios(`${URL_BASE}/${id}?key=${API_KEY}`).then(({ data }) => {
+         let include = characters.filter(ele => ele.id === id)
+         if(include.length > 0){
+          return alert("Ya existe el personaje con este ID")
+         }
          if (data.name) {
             setCharacters([...characters, data]);
          } else {

@@ -1,0 +1,71 @@
+.conteiner{
+    display: flex;
+    height: 7vh;
+    width: 221vh;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.bar{
+    margin-left: -121px;
+    margin-top: 5px;
+    width: 80vh;
+    padding: 2px;
+}
+
+
+.about{
+    margin-left: 80px;
+    margin-top: -34px;
+}
+.about button{
+    height: 5vh;
+    width: 11vh;
+    background-color: rgb(15, 243, 15);;
+    border-radius: 10px;
+}
+.about button:hover{
+    cursor: pointer;
+    border: 2px solid  rgb(15, 243, 15);;
+    box-shadow: 5px 8px 10px rgb(15, 243, 15);;
+}
+
+
+.home{
+    margin-left: 250px;
+    margin-top: -30px;
+}
+.home button{
+    height: 5vh;
+    width: 10vh;
+    background-color: rgb(15, 243, 15);
+    border-radius: 10px;
+}
+.home button:hover{
+    cursor: pointer;
+    border: 2px solid  rgb(15, 243, 15);
+    box-shadow: 5px 8px 10px rgb(15, 243, 15);
+}
+
+
+.fav{
+    margin-left: 430px;
+    margin-top: -30px;
+}
+.fav button{
+    height: 5vh;
+    width: 12vh;
+    background-color: rgb(15, 243, 15);;
+    border-radius: 10px;
+}
+.fav button:hover{
+    cursor: pointer;
+    border: 2px solid  rgb(15, 243, 15);;
+    box-shadow: 5px 8px 10px rgb(15, 243, 15);;
+}
+
+
+
+
+
+

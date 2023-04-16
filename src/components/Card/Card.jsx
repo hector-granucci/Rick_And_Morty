@@ -1,8 +1,9 @@
 import { Link} from 'react-router-dom';
 import { useDispatch, useSelector} from 'react-redux';
 import { useState } from 'react';
-import { addfav, removefav } from '../redux/actions';
+import { addfav, removefav } from '../../redux/actions';
 import { useEffect } from 'react';
+import style from "./Card.module.css"
 
 
 export default function Card({id,name,status,species,gender,origin,image,onClose}) {
@@ -27,12 +28,15 @@ export default function Card({id,name,status,species,gender,origin,image,onClose
             setIsFav(true);
          }
       });
-   }, [myFavorites]);
+   }, [myFavorites, id]);
  
 
    return ( 
-      <div>
-         <div>
+      <div className={style.conteiner}>
+         <div className={style.X}>
+            <button onClick={() => onClose(id)}>X</button>
+         </div>
+         <div className={style.corazon}>
          {
             isFav ? (
                <button onClick={handleFavorites}>❤️</button>
@@ -40,17 +44,22 @@ export default function Card({id,name,status,species,gender,origin,image,onClose
                <button onClick={handleFavorites}>🤍</button>
             )
          }
-         </div>
+         </div >
+         <div className={style.detalle}>
          <Link to={`/detail/${id}`} >
            <h3 className="card-name">{name}</h3>
          </Link>
-         <button onClick={() => onClose(id)}>X</button>
-         <h2>{name}</h2>
+         </div>
+         <div className={style.date}>
+         {/* <h2>{name}</h2> */}
          <h2>{status}</h2>
          <h2>{species}</h2>
          <h2>{gender}</h2>
          <h2>{origin.name}</h2>
+         <div className={style.img}>
          <img src={image} alt={name} />
+         </div>
+         </div>
       </div>
    );
 }
