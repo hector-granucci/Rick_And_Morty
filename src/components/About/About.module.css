@@ -1,0 +1,24 @@
+.conteiner {
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 50%;
+    background-color:rgb(99, 2, 255);
+    color: aliceblue;
+}
+
+
+.conteiner h2{
+    padding-top: 15px;
+}
+
+.conteiner p{
+    padding-bottom: 15px;
+}
+
+.conteiner p a{
+    color: aliceblue;
+}
+
+.conteiner>p>a:hover{
+    color: black;
+}

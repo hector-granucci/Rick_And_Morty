@@ -7,8 +7,7 @@
 }
 .bar button:hover{
     cursor: pointer;
-    border: 2px solid  rgb(15, 243, 15);
-    box-shadow: 5px 8px 10px rgb(15, 243, 15);
+    background-color: rgb(7, 110, 7);
 }
 
 .bar input{

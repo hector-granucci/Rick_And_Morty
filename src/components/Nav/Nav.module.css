@@ -16,24 +16,28 @@
 
 .about{
     margin-left: 80px;
-    margin-top: -34px;
+    margin-top: -33px;
 }
 .about button{
     height: 5vh;
     width: 11vh;
-    background-color: rgb(15, 243, 15);;
+    background-color: rgb(15, 243, 15);
     border-radius: 10px;
 }
 .about button:hover{
     cursor: pointer;
-    border: 2px solid  rgb(15, 243, 15);;
-    box-shadow: 5px 8px 10px rgb(15, 243, 15);;
+    border: 2px   rgb(15, 243, 15);
+    background-color: rgb(7, 110, 7);
+}
+.about a{
+    text-decoration: none;
+    color: black;
 }
 
 
 .home{
     margin-left: 250px;
-    margin-top: -30px;
+    margin-top: -31px;
 }
 .home button{
     height: 5vh;
@@ -43,8 +47,11 @@
 }
 .home button:hover{
     cursor: pointer;
-    border: 2px solid  rgb(15, 243, 15);
-    box-shadow: 5px 8px 10px rgb(15, 243, 15);
+    background-color: rgb(7, 110, 7);
+}
+.home a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -54,14 +61,18 @@
 }
 .fav button{
     height: 5vh;
-    width: 12vh;
-    background-color: rgb(15, 243, 15);;
+    width: 15vh;
+    background-color: rgb(15, 243, 15);
     border-radius: 10px;
 }
 .fav button:hover{
     cursor: pointer;
-    border: 2px solid  rgb(15, 243, 15);;
-    box-shadow: 5px 8px 10px rgb(15, 243, 15);;
+    background-color: rgb(7, 110, 7);
+}
+.fav a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
 }
 
 

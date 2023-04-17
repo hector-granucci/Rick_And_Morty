@@ -1,0 +1,12 @@
+.conteiner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    border: 1px solid white
+}
+
+.date{
+    color:rgb(15, 243, 15);
+    margin: 0 auto;
+}
